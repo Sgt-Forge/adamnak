@@ -7,7 +7,7 @@ const PORT = 8090;
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/js'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
-app.use('css', express.static(__dirname + '/public/css'));
+app.use('/css', express.static(__dirname + '/public/css'));
 
 app.set('view engine', 'ejs');
 
