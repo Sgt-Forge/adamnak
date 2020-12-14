@@ -12,7 +12,9 @@ app.use('css', express.static(__dirname + '/public/css'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    app.send('Hello, World!');
+    res.send('Hello, World!');
 });
 
-app.listen(PORT, HOST);
+app.listen(PORT, HOST, ()=> {
+    console.log('does this work?');
+});
