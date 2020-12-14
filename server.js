@@ -12,7 +12,7 @@ app.use('css', express.static(__dirname + '/public/css'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    app.send('Hello, World!');
+    res.render('index/index');
 });
 
 app.listen(PORT, HOST);
