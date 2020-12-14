@@ -12,7 +12,13 @@ app.use('/css', express.static(__dirname + '/public/css'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
+<<<<<<< HEAD
+    res.send('Hello, World!');
+=======
     res.render('index/index');
+>>>>>>> 0706943b215811724c56a3f3e0e5fce1d527ade8
 });
 
-app.listen(PORT, HOST);
+app.listen(PORT, HOST, ()=> {
+    console.log('does this work?');
+});
