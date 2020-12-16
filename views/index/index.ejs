@@ -2,12 +2,30 @@
 <html>
     <%- include("../partials/head") %>
     <body>
-        <div class="container">
-            <div class="header"></div>
-            <div class="row">
-                <h1 class="title">Hello, World from Paul</h1>
+        <div class="bg-image"></div>
+        <div class="main-content">
+            <div class="container">
+                <div id="intro-container">
+                    <div class="row justify-content-between">
+                    <div class="col-md-7 intro">
+                        <h1 class="display-1">Hello, World from Paul</h1>
+                        <div class="divider"></div>
+                        <p>Fact 1 about me</p>
+                        <p>Fact 2 about me</p>
+                        <p>Fact 3 about me</p>
+                    </div>
+                    <div class="col-md-3 intro">
+                        <h3 class="display-3">Get in touch</h2>
+                        <ul>
+                            <li>+1 (555)-555-5555</li>
+                            <li>email@example.com</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+                <%- include("../partials/footer") %>
             </div>
-            <%- include("../partials/footer") %>
         </div>
     </body>
 </html>

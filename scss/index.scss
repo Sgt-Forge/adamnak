@@ -1,3 +1,67 @@
-.header{
-    min-height: 10rem;
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+html {
+    height: 100%;
+}
+
+/* CLASSES */
+
+.bg-image{
+    background-image: url("/img/background.jpg");
+    position: static;
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(100px);
+
+    /* Full height */
+    height: 100vh; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.display-1{
+    font-size: 96px; // probably your code
+    -webkit-font-size:96px; // for chrome and safari
+    -o-font-size:96px; // for opera
+    -moz-font-size:96px; // for firefox
+}
+
+.intro{
+    background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+    background: rgba(245, 245, 245, 0.5);
+    border-radius: 10px;
+}
+
+.main-content{
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* IDS */
+#intro-container{
+    align-items: flex-end;
+    display: flex;
+    min-height: 90vh;
+    margin: 2rem;
+}
+
+/* Responsive */
+@media(min-width: 992px){
+    #intro-container{
+        margin: auto;
+    }
 }
