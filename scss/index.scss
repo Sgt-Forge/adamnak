@@ -19,8 +19,11 @@ html {
     background-image: url("/img/background.jpg");
     position: static;
     /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(100px);
+    filter: blur(5-px);
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
 
     /* Full height */
     height: 100vh; 
@@ -32,10 +35,7 @@ html {
 }
 
 .display-1{
-    font-size: 96px; // probably your code
-    -webkit-font-size:96px; // for chrome and safari
-    -o-font-size:96px; // for opera
-    -moz-font-size:96px; // for firefox
+    font-size: 96px; 
 }
 
 .intro{
