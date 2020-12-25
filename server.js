@@ -16,6 +16,4 @@ app.get('/', (req, res) => {
     res.render('index/index');
 });
 
-app.listen(PORT, HOST, ()=> {
-    console.log('does this work?');
-});
+app.listen(PORT, HOST);

@@ -19,7 +19,7 @@ html {
     background-image: url("/img/background.jpg");
     position: static;
     /* Add the blur effect */
-    filter: blur(5-px);
+    filter: blur(50px);
     -webkit-filter: blur(50px);
     -moz-filter: blur(50px);
     -o-filter: blur(50px);
@@ -39,8 +39,8 @@ html {
 }
 
 .intro{
-    background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
-    background: rgba(245, 245, 245, 0.5);
+    background: rgb(225, 225, 225); /* Fallback for older browsers without RGBA-support */
+    background: rgba(225, 225, 225, 0.5);
     border-radius: 10px;
 }
 
@@ -53,15 +53,14 @@ html {
 
 /* IDS */
 #intro-container{
-    align-items: flex-end;
-    display: flex;
-    min-height: 90vh;
     margin: 2rem;
+    margin-top: 5rem;
 }
 
 /* Responsive */
 @media(min-width: 992px){
     #intro-container{
         margin: auto;
+        margin-top: 10rem;
     }
 }
